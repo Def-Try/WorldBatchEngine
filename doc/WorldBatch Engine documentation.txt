@@ -1,0 +1,157 @@
+                             WorldBatch Engine documentation
+
+
+
+1.Introduction
+2.Sprites
+	2.1.Creating your own sprites for WB Engine
+	2.2.Typing sprites
+3.Music and sounds
+4.Controls
+	4.1.Simple controls
+	4.2.A "W,A,S,D" controls
+5.Saves and game data
+	5.1.Creating save
+		5.1.1.Save Code
+		5.1.2.Save File
+	5.2.Creating game data
+		5.2.1.Creating Game files
+		5.2.2.Creating packed game files
+		5.2.3.Creating crypted game data
+6.Project create
+	6.1.Creating sprites
+	6.2.Searching or creating sounds
+	6.3.Creating game controls
+	6.4.Coding game
+	6.5.Packing game data
+	6.6.Test!
+7.End
+
+
+
+
+
+                                               1.Introduction
+
+Hi. I'm glad YOU're using my game engine. 
+I hope you will read this file completely. 
+I just want to make creating games on Batch easier. 
+Good luck in creating your projects.
+
+
+
+
+
+
+
+
+
+
+                                               2.Sprites
+
+Start with a typing a simple sprite.
+
+COMMANDS: cd %WBEnginePath(\data\)%
+	  cd sprtest
+	  call test.bat
+
+Now you called a "summon" command and typed a simple sprite.
+Why a .spr? Because I want the sprite extension to be .spr
+
+Lets a create your own sprite!
+
+			2.1.Creating your own sprites for WB Engine
+
+Create a file with extension .spr
+
+Example: MySprite.spr
+
+Open this file using any text editor(such as Notepad) and create your own sprite from the characters on your keyboard.
+
+Done! Save a file.
+
+			2.2.Typing sprites
+
+Output this sprite! To do this, use the "call summon.bat %pathToSprite%" command.
+
+Done! You seeing a your sprate in command prompt.
+
+
+
+
+
+
+
+
+
+                                               3.Music and sounds
+
+PLay a "Powerup.wav" sound with a "sound.vbs" file.
+
+COMMANDS: cd %WBEnginePath(\data\)%
+	  cd sndtest
+	  call sound.bat
+
+Ok. Sounds not fully working on batch. I am for playing sound using VisualBasicScript file(VBS).
+
+To play the sound, call "sound.vbs" with the name of the sound. For example: "call sound.vbs music.wav"
+
+
+
+
+
+
+
+                                               4.Controls
+
+
+                         4.1.Simple controls
+
+There is nothing complicated about creating a simple control.
+
+COMMANDS:call scontrolcreate.bat createset %var%
+It command created User input.
+
+Create output!
+
+COMMANDS:call scontrolcreate.bat createif %var% %key% %to%
+
+This command created a condition. If a person enters the word specified in %key%, program is go to %to%
+
+
+                         4.2.A "W,A,S,D" controls
+
+Call a wasdcontrols.bat wherever you need WASD character control
+
+It is returns a value in %errorlevel% from 1 to 5, depending on the key being pressed. 5 returns when the player did not click anything
+
+1 - W
+2 - A
+3 - S
+4 - D
+
+
+
+
+                                               5.Saves and game data
+
+                         5.1.Save code
+
+Save code is a veeeery simple
+
+I just don't make file to save-load code.
+
+COMMANDS: 
+
+#generate
+echo Save Code: %var1%%var2%
+
+#to load
+set /p save=Save Code:
+if %save%==00 (commands)
+if %save%==01 (commands)
+if %save%==11 (commands)
+
+
+
+																Coming Soon!

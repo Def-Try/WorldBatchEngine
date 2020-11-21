@@ -1,0 +1,1 @@
+choice /c wasdk /n /t 0 /d k 
